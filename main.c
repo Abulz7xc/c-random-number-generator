@@ -4,6 +4,11 @@
 
 int main()
 {
+    
+    // Display game title
+    printf("=====================================\n");
+    printf("   Welcome to the Number Guessing Game (1-100)\n");
+    printf("=====================================\n");
 
     // Seed the random number generator
     srand(time(0));
@@ -35,7 +40,7 @@ int main()
         }
     } while (guessed_number != randomNumber);
 
-    printf("you guessed the number in %d guesses", no_of_guesses);
+    printf("you guessed the number in %d guesses\n", no_of_guesses);
 
     return 0;
 }
